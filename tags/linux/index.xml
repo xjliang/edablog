@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>linux on Synlab</title>
-    <link>https://xjliang.github.io/edablog/tags/linux/</link>
+    <link>https://xjliang.github.io/synlab/tags/linux/</link>
     <description>Recent content in linux on Synlab</description>
     <image>
       <url>http://localhost:1313/home.jpg</url>
@@ -10,13 +10,13 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy 2022 - 2022</copyright>
-    <lastBuildDate>Thu, 04 Jul 2019 14:54:57 +0800</lastBuildDate><atom:link href="https://xjliang.github.io/edablog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Jul 2019 14:54:57 +0800</lastBuildDate><atom:link href="https://xjliang.github.io/synlab/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux常用工具和软件</title>
-      <link>https://xjliang.github.io/edablog/posts/tools/linux-tools/</link>
+      <link>https://xjliang.github.io/synlab/posts/tools/linux-tools/</link>
       <pubDate>Thu, 04 Jul 2019 14:54:57 +0800</pubDate>
       
-      <guid>https://xjliang.github.io/edablog/posts/tools/linux-tools/</guid>
+      <guid>https://xjliang.github.io/synlab/posts/tools/linux-tools/</guid>
       <description>引言 一直在Linux上工作，当更换新电脑或者发行版时，往往会忘记曾经在背后稳定默默工作着的“好家伙”们。我希望把这些好的开源项目工具都收录起来，甚至编写成一键安装脚本。我的系统是基于ArchLinux的，所以许多包会采用AUR的方式记录在此。我相信即便是其他发行版，你也能够找到相应的办法编译安装的。最后，这里也顺便推荐一下基于Arch的发行版Manjaro with XFCE，我非常喜欢它的高效和稳定。
 系统工具 v2ray Project V，相当现代化的梯子，同时可以作为客户端和服务端，甚至是一个总的网络代理分发程序。服务端搭建详情可以参考博文博客系统构建（二）：V2ray 。
  Package: v2ray（Arch官方仓库带有此软件，可以直接使用pacman安装） Github: https://github.com/v2ray/v2ray-core  motrix motrix，很漂亮的下载工具，底层是调用了aria2的。支持magnet和torrent。但是因为是基于electron制作的，编译稍显繁琐（又是npm，我的天），值得一提的是作者还给国内IP加入了NPM镜像加速功能。
