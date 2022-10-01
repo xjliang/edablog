@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>code on Synlab</title>
+    <link>https://xjliang.github.io/tags/code/</link>
+    <description>Recent content in code on Synlab</description>
+    <image>
+      <url>http://localhost:1313/home.jpg</url>
+      <link>http://localhost:1313/home.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy 2022 - 2022</copyright>
+    <lastBuildDate>Sun, 20 Sep 2020 21:14:57 +0800</lastBuildDate><atom:link href="https://xjliang.github.io/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何在两周内学会C&#43;&#43;并构建优质的项目</title>
+      <link>https://xjliang.github.io/posts/code/learn-cpp/learn-cpp/</link>
+      <pubDate>Sun, 20 Sep 2020 21:14:57 +0800</pubDate>
+      
+      <guid>https://xjliang.github.io/posts/code/learn-cpp/learn-cpp/</guid>
+      <description>简介 最近因为科研需要，捡起了好几年前大学水平的C++（不忍直视），毫无意外地忘记地一干二净。于是两周后就有了这篇文章，期望能够帮助所有拥有一定编程基础（至少写过一个完整的项目的那种）的同学入门并掌握这一门编程语言。通过阅读这篇文章，你能够学到：
+ 用优质的资源，快速学习C++的语法构成 指针和防止内存泄漏等，较难的需要实战（编码）的内容 C++标准的现代化目录结构 利用CMake来进行跨平台开发/编译，把开发的软件安装到系统中 利用Catch2来编写单元测试，集成到CMake中去 Doxygen自动化生成API文档 Shell脚本与CMake联动，进一步实现自动化（龟速更新中） 跨系统交叉编译，做成Docker镜像（未来用到了再更）  我的开发平台是&amp;quot;macOS Catalina&amp;rdquo;，选择的IDE是&amp;quot;vscode&amp;rdquo;，编译器采用了&amp;quot;g++&amp;rdquo;，在考虑兼容性和新特性之后，我选择了&amp;quot;c++17&amp;quot;版本进行开发。文中许多的资源，是需要梯子才能够访问的，这点请注意。
+快速学习C++语法结构 写出你的 &amp;ldquo;Hello, world!&amp;quot;（VSCODE配置） 首先，让我们从简单难度开始：在你的本地代码仓库中建立一个文件夹，名字随意，创建一个 hello.cc 文件并保存，内容如下（现在不需要去关心这些内容代表什么）：
+#include &amp;lt;iostream&amp;gt; int main() { std::cout &amp;lt;&amp;lt; &amp;#34;hello, world!&amp;#34; &amp;lt;&amp;lt; std::endl; return 0; } 打开 terminal 以后，你就可以进行手动编译了：
+# 编译 g++ hello.cc -o hello.o # 运行 ./hello.o 当然，每次进行这样的手动编译，实在繁琐并且无法进行断点调试。在VSCODE中编写C++项目，首先你要安装一个&amp;quot;C/C++&amp;quot;的扩展，然后打开刚才存放 hello.cc 的目录，双击打开 hello.cc 以后，按住 cmd+shift+p 呼出vscode的命令面板，输入 tasks: 索引到 &amp;ldquo;Tasks: Configure Task&amp;rdquo;（如图所示）选择编译器，这里我选择了g++作为编译器，之后你能在.vscode目录下发现自动创建出的 &amp;ldquo;tasks.json&amp;rdquo;（当然我们要进行修改）
+之后选择左侧的调试按钮，创建一个 &amp;ldquo;launch.json&amp;rdquo;，附上我的两个配置文件如下：
+ .vscode/task.json  { &amp;#34;version&amp;#34;: &amp;#34;2.0.0&amp;#34;, &amp;#34;tasks&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;label&amp;#34;: &amp;#34;C/C++: g++ build active file&amp;#34;, &amp;#34;command&amp;#34;: &amp;#34;/usr/bin/g++&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-std=c++17&amp;#34;, &amp;#34;-g&amp;#34;, &amp;#34;${file}&amp;#34;, &amp;#34;-o&amp;#34;, &amp;#34;${fileDirname}/caches/${fileBasenameNoExtension}.</description>
+    </item>
+    
+  </channel>
+</rss>
