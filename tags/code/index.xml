@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy 2022 - 2022</copyright>
-    <lastBuildDate>Sun, 20 Sep 2020 21:14:57 +0800</lastBuildDate><atom:link href="https://xjliang.github.io/synlab/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Oct 2020 15:45:31 +0800</lastBuildDate><atom:link href="https://xjliang.github.io/synlab/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Datapath Synthesis</title>
+      <link>https://xjliang.github.io/synlab/posts/syn/datapath_synthesis/</link>
+      <pubDate>Sun, 04 Oct 2020 15:45:31 +0800</pubDate>
+      
+      <guid>https://xjliang.github.io/synlab/posts/syn/datapath_synthesis/</guid>
+      <description>Introduction datapath 在电路设计中是较大的运算元件，因此单独对 datapath 进行优化是非常重要的。
+基本的 datapath synthesis 包括两个步骤：
+  datapath inferrencing：识别出 design 中包含的 datapath，存储必要的信息，在整个综合流程中 keep hierarchy，方便单独对其进行优化；
+  datapath implementation selection：在 infer 出 datapath 之后，我们赋予了这些 datapath block 一个抽象的标记，而我们的最终目标是将这些 datapath block 都转换为 gate-level 的netlist，这就需要针对每个特地的 datapath block，将其映射为 gate-level 的 netlist。
+  datapath implementation substitution：替换某个 datapath 的实现。
+  下面分别来说说这些步骤的目的以及实现方式。
+Datapath inferrencing 这个步骤类似于 synthesis 中的 elaboration，目的是识别出 design 中的 datapath block。
+这个识别的实现方式暂时以 Yosys 为例进行说明。
+Yosys 这个开源工具主要的流程是：
+ elaborate； techmap; opt; abc opt &amp;amp; mapping; dump final mapped netlist;  其中，techmap 这个步骤可以认为是将一个抽象的 operator（比如 +, -, *, /, &amp;hellip;）替换为一种 hard coded 的 module 实现，这个实现是通过 techmap.</description>
+    </item>
+    
     <item>
       <title>如何在两周内学会C&#43;&#43;并构建优质的项目</title>
       <link>https://xjliang.github.io/synlab/posts/code/learn-cpp/learn-cpp/</link>
